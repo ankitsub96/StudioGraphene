@@ -52,20 +52,20 @@ function App() {
   return (
     <div className="">
 
-      <Navbar expand="sm">
+      <Navbar expand="lg">
 
         <Nav className="" style={{flexGrow: '0'}}>
           <Navbar.Brand href="#home">LOGO</Navbar.Brand>
         </Nav>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=""> 
-          <Nav.Link className="mx-4" href="#home">ABOUT</Nav.Link>
-          <Nav.Link className="mx-4" href="#home">COMMUNITY</Nav.Link>
-          <Nav.Link className="mx-4" href="#home">LOCATION</Nav.Link>
-          <Nav.Link className="mx-4" href="#home">OUR MENU</Nav.Link>
-          <Nav.Link className="mx-4" href="#home">RECIPES</Nav.Link>
-            <Nav.Link className="mx-4 right-link" href="#home">CONTACT</Nav.Link>
-            <Nav.Link className="mx-4" href="#link">LOGIN</Nav.Link>
+          <Nav.Link className="mx-3" href="#home">ABOUT</Nav.Link>
+          <Nav.Link className="mx-3" href="#home">COMMUNITY</Nav.Link>
+          <Nav.Link className="mx-3" href="#home">LOCATION</Nav.Link>
+          <Nav.Link className="mx-3" href="#home">OUR&nbsp;MENU</Nav.Link>
+          <Nav.Link className="mx-3" href="#home">RECIPES</Nav.Link>
+            <Nav.Link className="mx-3 right-link" href="#home">CONTACT</Nav.Link>
+            <Nav.Link className="mx-3" href="#link">LOGIN</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -28,7 +28,7 @@ body {
     @media(max-width: 768px){
       flex-wrap: wrap;
       .right-link{
-        margin-left: unset !important;
+        margin: auto 1rem !important;
       }
     }
   }
@@ -56,6 +56,9 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  @media(max-width:775px){
+    height: unset;
+  }
   img {
     min-width: 60%;
     margin: 0 auto auto;
@@ -89,7 +92,7 @@ a.commonLink {
     justify-content: center;
     gap: 1%;
     .section2__loneText{
-      @media(max-width: 768px){
+      @media(max-width: 844px){
         width: 85% !important;
         margin: 1rem auto !important;
       }
@@ -157,7 +160,8 @@ a.commonLink {
     display: inline-flex;
     flex-direction: column;
     color: #6a5953;
-    @media(max-width: 768px) {
+    @media(max-width: 668px) {
+      align-items: center;
       width: 100% !important; 
       margin: 2rem auto !important;
     }
