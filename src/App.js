@@ -54,17 +54,17 @@ function App() {
 
       <Navbar expand="sm">
 
-        <Nav className="">
+        <Nav className="" style={{flexGrow: '0'}}>
           <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+        </Nav>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className=""> 
           <Nav.Link className="mx-4" href="#home">ABOUT</Nav.Link>
           <Nav.Link className="mx-4" href="#home">COMMUNITY</Nav.Link>
           <Nav.Link className="mx-4" href="#home">LOCATION</Nav.Link>
           <Nav.Link className="mx-4" href="#home">OUR MENU</Nav.Link>
           <Nav.Link className="mx-4" href="#home">RECIPES</Nav.Link>
-        </Nav>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className="mx-4" href="#home">CONTACT</Nav.Link>
+            <Nav.Link className="mx-4 right-link" href="#home">CONTACT</Nav.Link>
             <Nav.Link className="mx-4" href="#link">LOGIN</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -100,7 +100,7 @@ function App() {
 
             <div className={sectionNumber === 2 ? "card-group animate__animated animate__fadeInUpBig" : 'card-group'} style={{ position: 'relative', alignSelf: 'flex-end' }}>
               <img src="detail02.png" alt="detail 02" style={{ position: 'absolute', top: '72%', left: '30%' }} />
-              <img src="https://public-v2links.adobecc.com/b0192e90-6c9b-47c6-6918-b0b1c86ef48c/component?params=component_id%3A8f1eb5c1-5ead-4ed5-9e88-f15f601d4913&params=version%3A0&token=1621828188_da39a3ee_c4f891315ca6a6b6a1fe5aadb3647e63c30e7050&api_key=CometServer1" alt="detail 01" style={{ position: 'absolute', bottom: '-15%', right: '-2%' }} />
+              <img src="detail1.png" alt="detail 01" style={{ position: 'absolute', bottom: '-15%', right: '-2%' }} />
               <div className="card">
                 <img src="./Insta-colored.png" alt="Insta-colored" style={{ position: 'absolute', top: '0', right: '0' }} />
                 <img src="https://article.innovadatabase.com/articleimgs/article_images/637507976667361662food%20waste%20trash%20food%20square.jpg" alt="Food 1" style={{ maxWidth: '100%', width: '95%', height: '95%', margin: 'auto' }} />
@@ -157,7 +157,7 @@ function App() {
               </div>
             </div>
 
-            <p className="mt-5 mr-auto" style={{ fontSize: '1rem', width: '20%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
+            <p className="section2__loneText mt-5 mr-auto" style={{ fontSize: '1rem', width: '20%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
 
 
             <div className={sectionNumber === 2 ? "card-group animate__animated animate__fadeInUpBig" : 'card-group'} style={{ position: 'relative', alignSelf: 'flex-end' }}>
@@ -194,14 +194,14 @@ function App() {
       </ScrollAnimation>
 
 
-      <ScrollAnimation duration={0.01} animateIn="animate__fadeIn" initiallyVisible={true} afterAnimatedIn={() => { setSection(3) }}>
-        <div className="section2" style={{}}>
-          <div className="section2__header" style={{}}>
+      <ScrollAnimation duration={0.01} animateIn="animate__fadeIn" initiallyVisible={true} afterAnimatedIn={() => { setSection(3) }}  style={{width: '100vw', overflowX: 'hidden'}}>
+        <div className="section3" style={{}}>
+          <div className="section3__header" style={{}}>
             <h3 style={{ margin: '0' }}>POPULAR</h3>
             <h1 style={{ margin: '0 0 0.6rem' }}>RECIPES</h1>
             <a href="dgfsg" className="commonLink" >SEE&nbsp;ALL</a>
           </div>
-          <div className="section2__subHeader ml-auto" style={{}}>
+          <div className="section3__subHeader ml-auto" style={{}}>
             <h3 className="my-0 mx-0 mb-2">DO YOU WANT TO SHARE YOUR OWN RECIPE?</h3>
             <a href="dgfsg" className="commonLink">SEND&nbsp;IT&nbsp;NOW</a>
           </div>
@@ -216,12 +216,12 @@ function App() {
                     <h2>{el.servings}</h2>
                     <p>SERVINGS</p>
                   </div>
-                  <a href={el.link} style={scrollElement === index ? { width: '10%', position: 'absolute', bottom: '0', right: '0' } : { width: '25%', position: 'absolute', bottom: '0', right: '0' }}>
-                    <img style={{ maxWidth: '100%' }} src="https://public-v2links.adobecc.com/b0192e90-6c9b-47c6-6918-b0b1c86ef48c/component?params=component_id%3Aa0d80c89-5674-4592-9fad-5fd83129d799&params=version%3A0&token=1621755877_da39a3ee_b92aa4b471710382855b9ae05e44cff53c69670a&api_key=CometServer1" alt="link" />
+                  <a href={el.link} style={scrollElement === index ? { width: '20%', position: 'absolute', bottom: '0', right: '0' } : { width: '25%', position: 'absolute', bottom: '0', right: '0' }}>
+                    <img style={{ maxWidth: '100%' }} src="link.png" alt="link" />
                   </a>
 
                   {el.chefChoice ? (
-                    <img style={{ maxWidth: '40%', maxHeight: '40%', position: 'absolute', top: '-18%', right: '10%', objectFit: 'contain' }} src="https://public-v2links.adobecc.com/b0192e90-6c9b-47c6-6918-b0b1c86ef48c/component?params=component_id%3A4e970e2f-7d9c-45f9-9772-9fae8c51edaf&params=version%3A0&token=1621755877_da39a3ee_b92aa4b471710382855b9ae05e44cff53c69670a&api_key=CometServer1" alt="chef choice" />) : ''}
+                    <img style={{ maxWidth: '40%', maxHeight: '40%', position: 'absolute', top: '-18%', right: '10%', objectFit: 'contain' }} src="chef.png" alt="chef choice" />) : ''}
 
                 </div>
                 <div className="card-body">

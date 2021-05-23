@@ -13,12 +13,30 @@ body {
   flex-wrap: wrap;
   width: 100vw;
   align-items: center;
+  @media(max-width: 768px){
+    backdrop-filter: blur(10px);
+  }
   a {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7) !important;
   }
+  .navbar-nav{
+    flex-grow: 1;
+    .right-link{
+      margin-left: auto !important;
+    }
+    @media(max-width: 768px){
+      flex-wrap: wrap;
+      .right-link{
+        margin-left: unset !important;
+      }
+    }
+  }
 }
-
+.animated{
+  width: 100vw;
+  overflow-x: hidden;
+}
 .pageScroll {
   position: fixed;
   left: 0;
@@ -70,6 +88,27 @@ a.commonLink {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1%;
+    .section2__loneText{
+      @media(max-width: 768px){
+        width: 85% !important;
+        margin: 1rem auto !important;
+      }
+    }
+  }
+  .section2__row {
+    padding: 4% 0%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    :nth-child(4){
+      @media(max-width: 768px){
+        width: 85% !important;
+        margin: 1rem auto !important;
+      }
+    }
   }
   .label {
     display: inline-flex;
@@ -79,6 +118,10 @@ a.commonLink {
     width: 29%;
     margin-left: auto;
     padding: 0 2%;
+    @media(max-width:768px){
+      margin-left: unset;
+      width: 85%;
+    }
     > p {
       color: #252525d4;
       width: 70%;
@@ -90,13 +133,24 @@ a.commonLink {
     min-width: 420px;
     gap: 10px;
     margin: 50px 0;
+    @media(max-width:768px){
+      margin: 30px 0;
+    }
     .card {
       max-width: 220px;
       max-height: 220px;
     }
   }
 }
-.section2 {
+.section2  {
+  width: 71%;
+  margin: 5% auto;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  overflow-x: visible;
+}
+.section3  {
   width: 71%;
   margin: 5% auto;
   display: flex;
@@ -107,15 +161,15 @@ a.commonLink {
     border: none;
     box-shadow: 0px 15px 50px #0000000F;
   }
-  .section2__header,
-  .section2__subHeader {
+  .section3__header,
+  .section3__subHeader {
     width: 10%;
     margin: 4% auto auto 0%;
     display: inline-flex;
     flex-direction: column;
     color: #6a5953;
   }
-  .section2__subHeader {
+  .section3__subHeader {
     width: 70%;
     text-align: right;
     margin-right: 0;
