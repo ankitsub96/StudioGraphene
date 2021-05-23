@@ -1,0 +1,60 @@
+var Recipes = [
+    {
+        title : 'CHARRED BROCCOLI & CHEAT’S VEGGIE ROMESCO TOAST',
+        text: 'Make a speedy version of romesco sauce with its famous almond and red pepper flavours. Serve on sourdough and add broccoli for a colourful, veget…',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvEYeC-i59XfWsBe8U71sGPMmLf8RpBZpCmg&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 4,
+        chefChoice : true,
+    } ,
+    {
+        title : 'PINEAPPLE FRUIT SALAD WITH FRESH CREAM',
+        text: 'The pineapple juice is the star of the dressing and what gives it such a refreshing and sweet taste. Pineapple juice is kno...',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkrutHtZ95UYxAqasZ0kNbkbFoz_FBeBCag&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 2,
+        chefChoice : false,
+    } ,
+    {
+        title : 'CHEESE, SPINACH & MUSHROOM STUFFED CHI…',
+        text: 'Amp up this dinner party classic by stuffing three types of cheese, spinach and mushroom into the chicken…',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWumtlYEL1tzkEX9XlpnCU5AZ1Hh-9__C6iA&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 2,
+        chefChoice : true,
+        alignEnd: true
+    } ,
+    {
+        title : 'FETA AND PEACH COUSCOUS',
+        text: 'Grab just four ingredients to make this easy, light lunch and enjoy a taste of summer.Th combination of peaches, feta...',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgNQVUvyfoXjdhfuunY_dRwvBd6GXmfhgPQ&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 8,
+        chefChoice : false,
+    } , 
+    {
+        title : 'PINEAPPLE FRUIT SALAD WITH FRESH CREAM',
+        text: 'The pineapple juice is the star of the dressing and what gives it such a refreshing and sweet taste. Pineapple juice is kno...',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkrutHtZ95UYxAqasZ0kNbkbFoz_FBeBCag&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 2,
+        chefChoice : false,
+    } ,
+    {
+        title : 'CHEESE, SPINACH & MUSHROOM STUFFED CHI…',
+        text: 'Amp up this dinner party classic by stuffing three types of cheese, spinach and mushroom into the chicken…',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWumtlYEL1tzkEX9XlpnCU5AZ1Hh-9__C6iA&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 2,
+        chefChoice : true,
+    } ,
+    {
+        title : 'FETA AND PEACH COUSCOUS',
+        text: 'Grab just four ingredients to make this easy, light lunch and enjoy a taste of summer.Th combination of peaches, feta...',
+        imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgNQVUvyfoXjdhfuunY_dRwvBd6GXmfhgPQ&usqp=CAU',
+        link: 'dagfdsg',
+        servings: 8,
+        chefChoice : false,
+    } , 
+]
+export default Recipes

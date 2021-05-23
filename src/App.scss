@@ -1,0 +1,239 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  height: 200vh;
+  font-family: "Oswald", sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  a {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+.pageScroll {
+  position: fixed;
+  left: 0;
+  height: 100px;
+  top: calc(50% - 50px);
+
+  li {
+    display: block;
+    white-space: pre;
+    transition: all 0.5s;
+    text-decoration: line-through;
+  }
+}
+.section1 {
+  background: #ffdac9 0% 0% no-repeat padding-box;
+  height: 60vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  img {
+    min-width: 60%;
+    margin: 0 auto auto;
+  }
+}
+
+a.commonLink {
+  background-color: #ffdac9;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: unset;
+  padding: 0.1rem 0.4rem;
+  font-size: 85%;
+  width: min-content;
+}
+.section2 {
+  padding: 4% 0%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1%;
+
+  .section2__row {
+    padding: 4% 0%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+  }
+  .label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: space-between;
+    width: 29%;
+    margin-left: auto;
+    padding: 0 2%;
+    > p {
+      color: #252525d4;
+      width: 70%;
+    }
+  }
+  .card-group {
+    display: inline-flex;
+    height: 200px;
+    min-width: 420px;
+    gap: 10px;
+    margin: 50px 0;
+    .card {
+      max-width: 220px;
+      max-height: 220px;
+    }
+  }
+}
+.section2 {
+  width: 71%;
+  margin: 5% auto;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  .card{
+    border: none;
+    box-shadow: 0px 15px 50px #0000000F;
+  }
+  .section2__header,
+  .section2__subHeader {
+    width: 10%;
+    margin: 4% auto auto 0%;
+    display: inline-flex;
+    flex-direction: column;
+    color: #6a5953;
+  }
+  .section2__subHeader {
+    width: 70%;
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 1%;
+    a {
+      margin-left: auto;
+    }
+  }
+  .carouselRow {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: visible;
+    overflow: visible;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 25px;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    min-height: 520px;
+    min-width: 100%;
+    .card {
+      transition: all 0.3s; 
+      margin-top: 0.001%;
+      // min-height: 300px;
+      height: 450px;
+      min-width: 225px;
+      font-weight: 300;
+      position: relative;
+
+      .header__image {
+        height: 225px;
+        position: relative;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .servings {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 40%;
+        color: white;
+        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 500;
+        * {
+          margin: 0;
+        }
+      }
+      .card-header {
+        min-height: 71px;
+        font-weight: 400;
+        background-color: unset;
+        padding: 0;
+        margin: 0 0 0.5rem;
+      }
+    }
+    .bigCard {
+      transition: all 0.3s; 
+      // margin-top: 0.2%;
+      // align-self: flex-end; 
+      // min-height: 450px;
+      height: 520px;
+      min-width: 340px;
+      position: relative;
+      box-shadow: 0px 20px 30px #0000000A;
+
+      .servings {
+        width: 35%;
+      }
+      .header__image {
+        height: 340px;  
+      }
+      .servings { 
+        h2{
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+      .card-header {
+        min-height: 63px;
+        font-size: 1.3rem;
+        margin: 0 0 0.3rem;
+      }
+      .card-body:nth-child(1){
+        margin: 0.3rem 0;
+      }
+      .card-text {
+        min-height: 50px;
+        font-size: 1rem; 
+        font-weight: 300;
+      }
+    }
+  }
+
+  .scrollControl{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 40px;
+    gap: 10px;
+    button{
+      all: unset;
+      min-width: 15px;
+      cursor: pointer;
+      height: 100%;
+    }
+  }
+}
